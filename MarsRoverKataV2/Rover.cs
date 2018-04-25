@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 
 namespace MarsRoverKataV2
 {
@@ -6,7 +7,7 @@ namespace MarsRoverKataV2
     {
         public readonly CardinalPoint CardinalPointFaced;
 
-        public Rover(CardinalPoint initialDirection)
+        public Rover(Grid gridSize, Point startingPoint, CardinalPoint initialDirection)
         {
             CardinalPointFaced = initialDirection;
         }

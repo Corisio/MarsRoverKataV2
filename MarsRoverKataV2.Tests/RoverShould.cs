@@ -12,7 +12,9 @@ namespace MarsRoverKataV2.Tests
         [TestCase(CardinalPoint.West)]
         public void BeFacingTheCorrectCardinalPoint_WhenInitialised(CardinalPoint startingCardinalPoint)
         {
-            var rover = new Rover(startingCardinalPoint);
+            var grid = new Grid(5, 5);
+            var startingPosition = new Point();
+            var rover = new Rover(grid, startingPosition, startingCardinalPoint);
 
             Assert.AreEqual(startingCardinalPoint, rover.CardinalPointFaced);
         }
