@@ -1,0 +1,2 @@
+﻿Grid with width = 5 and height = 5 initialised.
+Rover with starting position (0,0) for (X,Y) and facing North initialised.
